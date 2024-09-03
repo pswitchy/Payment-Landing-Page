@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Smart Credit Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-login {
+            background-color: #333; /* Dark gray */
+        }
+        .btn-login:hover {
+            background-color: #1f2937; /* Vibrant dark blue-gray */
+        }
+        .btn-signup {
+            background-color: #555; /* Medium gray */
+        }
+        .btn-signup:hover {
+            background-color: #3b82f6; /* Vibrant blue */
+        }
+        .btn-download {
+            background-color: #E6E6FA; /* Lavender */
+        }
+        .btn-download:hover {
+            background-color: #D8BFD8; /* Thistle */
+        }
+        .btn-download span {
+            transition: color 0.3s ease;
+        }
+        .btn-download:hover span {
+            color: #4B0082; /* Indigo */
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <header class="flex flex-col md:flex-row justify-between items-center p-6">
+        <div class="flex items-center space-x-4 mb-4 md:mb-0">
+            <div class="bg-white rounded-full p-2">
+                <i class="fas fa-bolt text-black"></i>
+            </div>
+            <nav class="space-x-4 md:space-x-8">
+                <a href="#" class="text-gray-400 hover:text-white">Features</a>
+                <a href="#" class="text-gray-400 hover:text-white">Pricing</a>
+                <a href="#" class="text-gray-400 hover:text-white">About us</a>
+            </nav>
+        </div>
+        <div class="space-x-4">
+            <button class="text-white py-2 px-4 rounded-lg btn-hover btn-login transition-transform duration-200">Log In</button>
+            <button class="text-white py-2 px-4 rounded-lg btn-hover btn-signup transition-transform duration-200">Sign Up</button>
+        </div>
+    </header>
+    <main class="flex flex-col md:flex-row justify-between items-center p-6">
+        <div class="space-y-6 mb-8 md:mb-0 text-center md:text-left">
+            <p class="text-gray-400">START SAVING MONEY</p>
+            <h1 class="text-4xl md:text-5xl font-bold">Smart Credit Card<br>For Your Daily Life.</h1>
+            <div class="flex justify-center md:justify-start">
+                <button class="text-black py-4 px-8 rounded-lg flex items-center space-x-2 btn-hover btn-download transition-transform duration-200">
+                    <span>Download</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="bg-gray-800 rounded-3xl p-6 w-full md:w-80">
+                <div class="text-gray-400 mb-4">Welcome, Parth</div>
+                <div class="bg-gray-700 rounded-xl p-4 mb-4">
+                    <div class="text-white">Balance</div>
+                    <div class="text-2xl font-bold text-white">Rs 30,896</div>
+                    <div class="text-gray-400">**** 2468</div>
+                    <div class="text-gray-400">02/16</div>
+                    <div class="text-gray-400">VISA</div>
+                </div>
+                <div class="bg-gray-700 rounded-xl p-4 mb-4">
+                    <div class="text-white">Balance</div>
+                    <div class="text-2xl font-bold text-white">Rs 15,432</div>
+                    <div class="text-gray-400">**** 1357</div>
+                    <div class="text-gray-400">03/22</div>
+                    <div class="text-gray-400">VISA</div>
+                </div>
+                <div class="flex justify-between text-gray-400 mb-4">
+                    <div>
+                        <div>Credit Limits</div>
+                        <div class="text-white">Rs 10,000</div>
+                    </div>
+                    <div>
+                        <div>Monthly Spend</div>
+                        <div class="text-white">Rs 5,254.00</div>
+                    </div>
+                </div>
+                <div class="text-white mb-4">History</div>
+                <div class="flex justify-between text-gray-400 mb-2">
+                    <div>McDonald's</div>
+                    <div>Rs 50</div>
+                </div>
+                <div class="flex justify-between text-gray-400 mb-2">
+                    <div>Netflix</div>
+                    <div>Rs 120</div>
+                </div>
+                <div class="flex justify-between text-gray-400 mb-2">
+                    <div>Starbucks</div>
+                    <div>Rs 30</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
